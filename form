@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Registration form</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="page-form">
+  <main>
+    <div class="registration-form-container">
+      <h1 class="form-title">sign up</h1>
+    </div>
+    <div class="form-fileds">
+      <h2 class="title-field">New user?</h2>
+      <p class="description-field">Use the form below to create your account.</p>
+      <form action="server-ok.json" method="post">
+        <ul class="form-list">
+          <li class="form-item">
+            <label for="name-field">First Name</label>
+            <p>
+              <input type="text" id="name-field" name="name" value="Alice">
+            </p>
+          </li>
+          <li class="form-item">
+            <label for="surname-field">Last Name</label>
+            <p>
+              <input type="text" id="surname-field" name="surname" value="Miller">
+            </p>
+          </li>
+          <li class="form-item">
+            <label for="nationality-field">Nationality</label>
+            <p>
+              <input type="text" id="nationality-field" name="nationality" value="American">
+            </p>
+          </li>
+          <li class="form-item">
+            <label for="email-field">E-mail</label>
+            <p>
+              <input type="email" id="email-field" name="email" value="alice.miller@yahoo.com">
+            </p>
+          </li>
+          <li class="form-item">
+            Date of Birth <br>
+            <select name="day">
+              <option value="21">21</option>
+            </select>
+            <select name="month">
+              <option value="December">December</option>
+            </select>
+            <select name="year">
+              <option value="1995">1995</option>
+            </select>
+          </li>
+          <li class="form-item">
+            Gender <br>
+            <label>
+              <input type="radio" name="Gender" value="Male"> Male
+            </label>
+            <label>
+              <input type="radio" name="Gender" value="Female" checked> Female
+            </label>
+          </li>
+          <li class="form-item">
+            <label for="password">Password</label>
+            <p>
+              <input type="password" id="password" name="password">
+            </p>
+          </li>
+          <li class="form-item">
+            <label for="password-repeat">Confirm Password</label>
+            <p>
+              <input type="password" id="password-repeat" name="password-repeat">
+            </p>
+          </li>
+        </ul>
+      </form>
+      <p>Have an account? <a href="#">Login</a></p>
+      <button type="submit">Complete Signup</button>
+    </div>
+  </main>
+</body>
+
+</html>
