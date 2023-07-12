@@ -20,7 +20,7 @@
 		<div class="form-fileds">
 			<h2 class="title-field">New user?</h2>
 			<p class="description-field">Use the form below to create your account.</p>
-			<form class="form-registration" action="server-ok.json" method="post">
+			<form class="form-registration" action="#" method="post">
 				<ul class="form-registration-list">
 					<li class="form-registration-item">
 						<label class="form-registration-label" for="name-field">First Name</label>
@@ -82,13 +82,13 @@
 					<li class="form-registration-item">
 						<label class="form-registration-label" for="password">Password</label>
 						<p class="form-registration-password">
-							<input class="form-registration-input" type="password" id="password" name="password">
+							<input class="form-registration-input" type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 						</p>
 					</li>
 					<li class="form-registration-item">
 						<label class="form-registration-label" for="password-repeat">Confirm Password</label>
 						<p class="form-registration-password">
-							<input class="form-registration-input" type="password" id="password-repeat" name="password-repeat">
+							<input class="form-registration-input" type="password" id="password-repeat" name="password-repeat" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 						</p>
 					</li>
 				</ul>
